@@ -310,3 +310,13 @@ Create a switch statement that takes in a value (number) that represents a grade
 *   D: 59-65
 *   F: 0-59
 */
+
+let numberGrade = 95;
+
+switch(numberGrade) {
+    case (numberGrade >= 89):
+        console.log("You passed with an 'A'");
+        break;
+    default:
+        console.log("give me a number");
+}
