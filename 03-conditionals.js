@@ -311,12 +311,23 @@ Create a switch statement that takes in a value (number) that represents a grade
 *   F: 0-59
 */
 
-let numberGrade = 95;
+let numberGrade = 80;
 
-switch(numberGrade) {
-    case (numberGrade >= 89):
+switch (true) {
+    case numberGrade >= 89:
         console.log("You passed with an 'A'");
         break;
+    case numberGrade >= 79:
+        console.log("You passed with a 'B'");
+        break;
+    case numberGrade >= 66:
+        console.log("You passed with a 'C'");
+        break;
+    case numberGrade >= 59:
+        console.log("You have barely passed with a 'D'");
+        break;
+    case numberGrade < 59:
+        console.log("You failed.")
     default:
-        console.log("give me a number");
+        console.log("input not a grade");
 }
